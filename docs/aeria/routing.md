@@ -1,6 +1,6 @@
 # Routing
 
-Aeria ships a minimalistic web server with pattern matching, grouping, middlewares, and runtime validation support.
+Aeria ships a minimalistic web server with support for pattern matching, grouping, middlewares, and runtime validation.
 
 ### `createRouter()`
 >`createRouter(options: Partial<RouterOptions> = {}) => Router`
