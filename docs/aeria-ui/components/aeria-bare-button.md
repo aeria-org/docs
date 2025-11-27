@@ -27,7 +27,8 @@ This component renders an unstyled button that will ultimately be an `<a />` HTM
 
 ```vue
 <script setup lang="ts">
-const count = ref(0)
+const count1 = ref(0)
+const count2 = ref(0)
 </script>
 
 <template>
