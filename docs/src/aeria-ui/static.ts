@@ -25,19 +25,19 @@ export const components = [
 ]
 
 export const directives = {
-  'v-clickable': '/aeria-ui/directives#v-clickable',
-  'v-focus': '/aeria-ui/directives#v-focus',
-  'v-loading': '/aeria-ui/directives#v-loading',
-  'v-overlay': '/aeria-ui/directives#v-overlay',
+  'v-clickable': 'aeria-ui/directives#v-clickable',
+  'v-focus': 'aeria-ui/directives#v-focus',
+  'v-loading': 'aeria-ui/directives#v-loading',
+  'v-overlay': 'aeria-ui/directives#v-overlay',
 }
 
 export const composables = {
-  'useAction()': '/aeria-ui/composables#useaction',
-  'useBreakpoints()': '/aeria-ui/composables#usebreakpoints',
-  'useDebounce()': '/aeria-ui/composables#usedebounce',
-  'useMask()': '/aeria-ui/composables#usemask',
-  'useNavbar()': '/aeria-ui/composables#usenavbar',
-  'usePasswordPolicy()': '/aeria-ui/composables#usepasswordpolicy',
-  'useScrollObserver()': '/aeria-ui/composables#usescrollobserver',
+  'useAction()': 'aeria-ui/composables#useaction',
+  'useBreakpoints()': 'aeria-ui/composables#usebreakpoints',
+  'useDebounce()': 'aeria-ui/composables#usedebounce',
+  'useMask()': 'aeria-ui/composables#usemask',
+  'useNavbar()': 'aeria-ui/composables#usenavbar',
+  'usePasswordPolicy()': 'aeria-ui/composables#usepasswordpolicy',
+  'useScrollObserver()': 'aeria-ui/composables#usescrollobserver',
 }
 
