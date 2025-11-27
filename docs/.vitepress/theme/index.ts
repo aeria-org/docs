@@ -11,7 +11,9 @@ export default {
   enhanceApp: ({ app }) => {
     bootstrapApp({
       app,
-      instanceVars: {},
+      instanceVars: {
+        base: '/docs/',
+      },
     })
 
     app.component('NavbarQuickSwitch', NavbarQuickSwitch)
