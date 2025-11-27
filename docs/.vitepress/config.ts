@@ -25,6 +25,7 @@ export default defineConfig({
     },
     plugins: [
       aeriaIcons({
+        base: '/docs/',
         libraries: [
           '@aeria-ui/ui',
         ]
