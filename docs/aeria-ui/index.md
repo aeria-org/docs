@@ -3,12 +3,9 @@ aside: false
 ---
 
 <script setup lang="ts">
-import { useRouter } from 'vitepress'
 import * as statics from '../src/aeria-ui/static.js'
 import ApiContainer from '../src/components/api-container.vue'
 import ItemCard from '../src/components/item-card.vue'
-
-const router = useRouter()
 </script>
 
 # Aeria UI Reference
@@ -23,7 +20,7 @@ const router = useRouter()
 <item-card
   v-for="componentName of statics.components"
   :key="componentName"
-  @click="router.go(`components/${componentName}`)"
+  :href="`components/${componentName}`"
 >
   &lt;{{ componentName }} /&gt;
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="
+  <a class="
     rounded-lg
     p-4
     transform
@@ -11,5 +11,5 @@
     <div class="font-[500]">
       <slot></slot>
     </div>
-  </div>
+  </a>
 </template>
