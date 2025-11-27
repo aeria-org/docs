@@ -9,7 +9,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "@types/node": "^22.13.1",
+    "@types/node": "^24.10.1",
     "aeria-lang-vscode": "^0.0.28",
     "aeria-sdk": "^0.0.176",
     "less": "^4.2.2",
