@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { AeriaIcon } from 'aeria-ui'
-import { useRouter, useData } from 'vitepress'
+import { useRouter, useData, withBase } from 'vitepress'
 import { computed } from 'vue'
 
 const { page } = useData()
@@ -10,9 +10,9 @@ const relativePath = computed(() => {
 })
 
 const quickSwitch = () => {
-  return relativePath.value.startsWith('aeria/')
-    ? router.go('/aeria-ui/')
-    : router.go('/aeria/')
+  return relativePath.value.startsWith(withBase('aeria/'))
+    ? router.go(withBase('/aeria-ui/'))
+    : router.go(withBase('/aeria/'))
 }
 </script>
 
