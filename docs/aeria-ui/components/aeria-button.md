@@ -50,8 +50,9 @@ const count = ref(0)
 
 ### Props
 
-- `disabled` <Badge type="tip" text="boolean?" />: Whether or not clicking on the button is disabled.
-- `loading` <Badge type="tip" text="boolean?" />: Whether or not the button has a loading state.
+- `dummy` <Badge type="tip" text="boolean?" />: Don't capture click events.
+- `disabled` <Badge type="tip" text="boolean?" />: Disable click events.
+- `loading` <Badge type="tip" text="boolean?" />: Sets button to load state. While in this state, clicking is disabled.
 
 - `variant` <Badge type="tip" text="Size" /> <Badge type="tip" text="default: 'normal'" />: The variant of button styling. Accepted variants are:
 

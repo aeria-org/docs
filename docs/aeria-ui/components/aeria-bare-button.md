@@ -44,7 +44,8 @@ const count2 = ref(0)
 
 ### Props
 
-- `disabled` <Badge type="tip" text="boolean?" /> 
+- `dummy` <Badge type="tip" text="boolean?" />: Don't capture click events.
+- `disabled` <Badge type="tip" text="boolean?" />: Disable click events.
 
 ### Slots
 
