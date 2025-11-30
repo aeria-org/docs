@@ -12,6 +12,7 @@ withDefaults(defineProps<{
     flex-col
     gap-4
     border
+    border-gray-100
     dark:border-gray-800
     p-4
     rounded-lg
