@@ -4,8 +4,9 @@
 
 Repositories created with `create-aeria-app` comes with a ready-to-use docker-compose.yml file, alongside with dockerfiles to build the api, the web, and to bring up a nginx reverse proxy to serve both. This is the bare minimal required to deploy a full Aeria app exposing a single port. You may change or augment this file as needed.
 
-::: details View docker-compose.yml
-```yaml
+::: code-group View docker-compose.yml
+
+```yaml [docker-compose.yml]
 version: '3.8'
 
 services:
@@ -53,6 +54,7 @@ volumes:
   web-build:
 
 ```
+
 :::
 
 ### Installing dependencies
