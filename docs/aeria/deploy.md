@@ -4,36 +4,43 @@
 
 Repositories created with `create-aeria-app` comes with a ready-to-use docker-compose.yml file, alongside with dockerfiles to build the api, the web, and to bring up a nginx reverse proxy to serve both. This is the bare minimal required to deploy a full Aeria app exposing a single port. You may change or augment this file as needed.
 
+Below is the file just like in the [Quickstart](https://github.com/aeria-org/quickstart) repository.
+
 ::: code-group View docker-compose.yml
 
 ```yaml [docker-compose.yml]
-version: '3.8'
-
 services:
   mongo:
     image: mongo
     restart: always
     volumes:
-      - /tmp/mongodb-test:/data/db
-      - api-build:/opt/application/api-build
+      - /data/db:/data/db
     logging:
-      driver: none
+      options:
+        max-size: '10m'
+        max-file: '2'
 
   api:
     build:
-      context: api
+      dockerfile: Dockerfile.api
     restart: always
+    env_file: api/production.env
     depends_on:
       - mongo
     volumes:
       - api-build:/opt/application/api-build
-    env_file: api/production.env
+      - /data/storage:/data/storage
+    healthcheck:
+      test: curl -s -w '%{http_code}' http://localhost:3000/api/describe
+      timeout: 5s
+      interval: 10s
 
   web:
     build:
-      context: web
+      dockerfile: Dockerfile.web
     depends_on:
-      - api
+      api:
+        condition: service_healthy
     volumes:
       - api-build:/opt/application/api
       - web-build:/var/www/html
@@ -43,11 +50,16 @@ services:
       context: nginx
     restart: always
     depends_on:
+      - api
       - web
     ports:
       - 80:80
     volumes:
       - web-build:/var/www/html
+    logging:
+      options:
+        max-size: '2G'
+        max-file: '4'
 
 volumes:
   api-build:
