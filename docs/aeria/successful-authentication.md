@@ -24,11 +24,14 @@ type SuccessfulAuthentication = {
 
 ### Example
 
+The example below will try and retrieve a `user` document from the `customAuthenticate()` function (this function could for example implement OAuth or another authentication method not natively supported by Aeria, such as authenticating an user by it's secret key). In case of success, an `authResult` object is returned wrapped inside a `Result.result` object.
+
 ```ts
-const { error, result: user } = await authenticate(payload)
+const { error, result: user } = await customAuthenticate(payload)
 if( error ) {
   return Result.error(error)
 }
 
-return Result.result(successfulAuthentication(user, context))
+const authResult = successfulAuthentication(user, context)
+return Result.result(authResult)
 ```

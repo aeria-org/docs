@@ -15,18 +15,20 @@ type TraverseOptions = {
 }
 ```
 
-### Example usage
+### Examples
+
+The example below will take the plain `rawPayload` object and convert the `user.$in[0]` from a string to a ObjectId, since `traverseDocument()` will detect that `$in` is a MongoDB operator (because it is prefixed with a dollar sign). Note that `autoCast` is combined with `allowOperators`.
 
 ```ts
-const filtersCandidate = {
-  _id: {
+const rawPayload = {
+  user: {
     $in: [
       '653c3d448a707ef3d327f624'
     ]
   }
 }
 
-const filters = await traverseDocument(filtersCandidate, context.description, {
+const filters = await traverseDocument(rawPayload, context.description, {
   autoCast: true,
   allowOperators: true,
 })

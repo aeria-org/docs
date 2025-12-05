@@ -16,32 +16,7 @@ type DiscriminationStrategy =
 
 ## Rate Limiting
 
-**Type:**
-
-```ts
-enum RateLimitingErrors {
-  Unauthenticated = 'UNAUTHENTICATED',
-  LimitReached = 'LIMIT_REACHED',
-}
-
-type RateLimitingWithScale = {
-  scale: number
-}
-
-type RateLimitingWithLimit = {
-  limit: number
-}
-
-type RateLimitingParams = {
-  strategy: DiscriminationStrategy
-  increment?: number
-} & (
-  | RateLimitingWithLimit
-  | RateLimitingWithScale
-  | (RateLimitingWithLimit & RateLimitingWithScale)
-)
-
-```
+Aeria provides security builtins for rate limiting.
 
 ### Limiting the rate for a route
 
