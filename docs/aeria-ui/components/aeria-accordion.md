@@ -6,9 +6,11 @@ import ResultBox from '../../src/components/result-box.vue'
 
 # aeria-accordion
 
-This will render a minimally styled accordion.
+This component is used to render a minimally styled accordion.
 
 ### Example
+
+A headered, enumerated accordion.
 
 <result-box>
 <aeria-accordion

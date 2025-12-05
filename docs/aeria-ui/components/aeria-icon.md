@@ -10,6 +10,8 @@ const name = ref('changeme')
 
 ### Example
 
+An user icon with the text "Users" that will change when hovered.
+
 <result-box>
   <aeria-icon
     reactive

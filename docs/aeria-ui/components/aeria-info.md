@@ -13,7 +13,7 @@ provide more info about something where size doesn't fit.
 ### Example
 
 <result-box>
-<aeria-info where="left">
+<aeria-info>
   <template #text>
     This text will show when you hover
   </template>

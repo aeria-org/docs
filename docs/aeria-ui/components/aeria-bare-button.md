@@ -13,11 +13,29 @@ This component renders an unstyled button that will ultimately be an `<a />` HTM
 
 ### Example
 
-<result-box class="mb-4">
+An enabled bare button.
+
+<result-box>
   <aeria-bare-button @click="count1 += 1">
     Enabled (click me): {{ count1 }}
   </aeria-bare-button>
 </result-box>
+
+```vue
+<script setup lang="ts">
+const count = ref(0)
+</script>
+
+<template>
+  <aeria-bare-button @click="count += 1">
+    Enabled (click me): {{ count }}
+  </aeria-bare-button>
+</template>
+```
+
+---
+
+An disabled bare button.
 
 <result-box>
   <aeria-bare-button disabled @click="count2 += 1">
@@ -27,17 +45,12 @@ This component renders an unstyled button that will ultimately be an `<a />` HTM
 
 ```vue
 <script setup lang="ts">
-const count1 = ref(0)
-const count2 = ref(0)
+const count = ref(0)
 </script>
 
 <template>
-  <aeria-bare-button @click="count1 += 1">
-    Enabled (click me): {{ count1 }}
-  </aeria-bare-button>
-
-  <aeria-bare-button disabled @click="count2 += 1">
-    Disabled (click me): {{ count2 }}
+  <aeria-bare-button disabled @click="count += 1">
+    Disabled (click me): {{ count }}
   </aeria-bare-button>
 </template>
 ```
