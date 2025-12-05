@@ -130,7 +130,7 @@ router.GET('/mixed', (context) => {
 To stream something **through the response** of a route callback, simply return a readable stream from it.
 
 ```ts
-router.GET('/download', (context) => {
+router.GET('/download', () => {
   return fs.createReadStream('/tmp/my-file.dat')
 })
 ```
