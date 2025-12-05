@@ -36,7 +36,7 @@ assert(filters._id.$in[0] instanceof ObjectId)
 
 ### Options
 
-- `autocast`: Will automatically cast a value into it's expected type according to it's description property, throwing on error. Strings can be casted into `ObjectId` objects while Javascript date strings and timestamps can be casted into `Date` objects.
+- `autoCast`: Will automatically cast a value into it's expected type according to it's description property, throwing on error. Strings can be casted into `ObjectId` objects while Javascript date strings and timestamps can be casted into `Date` objects.
 - `getters`: Will fulfill document with its computed properties, applying the `s$getter` callback to each one.
 - `validate`: Will fulfill document with its computed properties, applying the `s$getter` callback to each one.
 - `validateRequired`: When `validate` is set to true, will consider this array of property names when validating document wholeness.
