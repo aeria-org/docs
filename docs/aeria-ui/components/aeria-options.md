@@ -13,7 +13,9 @@ This component renders a group of checkboxes (or radio inputs) depending on the 
 
 ### Example
 
-<result-box title="Single choice" class="mb-4">
+A radio-style option list.
+
+<result-box title="Single choice">
   <aeria-options
     v-model="singleChoice"
     :property="{
@@ -29,6 +31,30 @@ This component renders a group of checkboxes (or radio inputs) depending on the 
     {{ singleChoice }}
   </template>
 </result-box>
+
+```vue
+<script setup lang="ts">
+const choice = ref('')
+</script>
+
+<template>
+  <aeria-options
+    v-model="choice"
+    :property="{
+      enum: [
+        'a',
+        'b',
+        'c',
+      ]
+    }"
+  ></aeria-options>
+  <pre>Single choice: {{ choice }}</pre>
+</template>
+```
+
+---
+
+A select-style option list. Picked options will be appended to the beggining of the `choice` array.
 
 <result-box title="Multiple choice">
   <aeria-options
@@ -53,25 +79,12 @@ This component renders a group of checkboxes (or radio inputs) depending on the 
 
 ```vue
 <script setup lang="ts">
-const singleChoice = ref('')
-const multipleChoice = ref('')
+const choice = ref([])
 </script>
 
 <template>
   <aeria-options
-    v-model="singleChoice"
-    :property="{
-      enum: [
-        'a',
-        'b',
-        'c',
-      ]
-    }"
-  ></aeria-options>
-  <pre>Single choice: {{ singleChoice }}</pre>
-
-  <aeria-options
-    v-model="multipleChoice"
+    v-model="choice"
     :property="{
       type: 'array',
       items: {
@@ -83,6 +96,7 @@ const multipleChoice = ref('')
       }
     }"
   ></aeria-options>
-  <pre>Multiple choice: {{ multipleChoice }}</pre>
+  <pre>Multiple choice: {{ choice }}</pre>
 </template>
 ```
+

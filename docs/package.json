@@ -19,9 +19,13 @@
     "vitepress": "1.6.3"
   },
   "dependencies": {
-    "@aeria-ui/ui": "^0.0.154",
+    "@aeria-ui/core": "^0.0.116",
+    "@aeria-ui/i18n": "^0.0.19",
+    "@aeria-ui/state-management": "^0.0.21",
+    "@aeria-ui/ui": "^0.0.193",
+    "@aeria-ui/utils": "^0.0.12",
     "@tailwindcss/postcss": "^4.0.5",
-    "aeria-ui": "^0.0.159",
+    "aeria-ui": "^0.0.201",
     "vue": "^3.5.13"
   }
 }

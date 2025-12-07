@@ -6,7 +6,11 @@ import ResultBox from '../../src/components/result-box.vue'
 
 # aeria-context-menu
 
+This component is used to render a context menu that shows when a trigger is clicked.
+
 ### Example
+
+Will render a "Click me" label that, when clicked, will pop over a context menu with two actions as per specified in the props.
 
 <result-box>
 <aeria-context-menu

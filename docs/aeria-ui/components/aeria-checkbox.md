@@ -8,7 +8,11 @@ const tosAccepted = ref(false)
 
 # aeria-checkbox
 
+This component is used to render a checkbox that will change the state of the variable passed to `modelValue`.
+
 ### Example
+
+The code below will toggle the value of the `tosAccepted` variable.
 
 <result-box title="Terms of Use accepted?">
   <aeria-checkbox

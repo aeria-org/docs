@@ -11,9 +11,11 @@ const formData = ref({
 
 # aeria-form
 
-Forms can either be generated from a schema or composed using slots.
+This component is used to render a form that will shape the value of the variable passed to `modelValue`. Forms can either be generated from a schema or composed using slots.
 
 ### Example
+
+The code below will update the state of the `formData` variable and shape it according to the form passed to the `property` prop.
 
 <result-box title="Result">
   <aeria-form

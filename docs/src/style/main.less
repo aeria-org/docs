@@ -1,12 +1,14 @@
 @import '@aeria-ui/ui/themes/light.less';
 @import '@aeria-ui/ui/themes/dark.less';
 @import '@aeria-ui/ui/themes/animate.less';
+@import '@aeria-ui/ui/themes/rounded.less';
 
 @brand-color: #e97451;
 
 #aeria-layout {
-  .animate();
   .light-theme(@brand-color, #fff);
+  .animate();
+  .rounded(4px);
 }
 
 #aeria-layout.main--dark {

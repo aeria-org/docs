@@ -35,7 +35,7 @@ const count = ref(0)
 
 ---
 
-An disabled bare button.
+A disabled bare button.
 
 <result-box>
   <aeria-bare-button disabled @click="count2 += 1">

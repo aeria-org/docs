@@ -33,7 +33,6 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install dependencies
         run: pnpm install
-
       - name: Build with VitePress
         run: |
           pnpm --filter=docs build --emptyOutDir --outDir=../dist

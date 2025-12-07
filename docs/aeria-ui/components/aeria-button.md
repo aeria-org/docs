@@ -12,19 +12,14 @@ This component renders a styled button that will add style controls on top of [`
 
 ### Example
 
-<result-box title="Result" class="mb-4">
-  <aeria-button @click="count++">
-    Increment
-  </aeria-button>
-
-  <template #result>
-    {{ count }}
-  </template>
-</result-box>
+Will render a button that, when clicked, will increment the `count` variable. If `count` is greater than or equal to `10`, then the button is disabled.
 
 <result-box title="Result">
-  <aeria-button variant="alt" @click="count = 0">
-    Reset
+  <aeria-button
+    :disabled="count >= 10"
+    @click="count++"
+  >
+    Increment
   </aeria-button>
 
   <template #result>
@@ -40,10 +35,6 @@ const count = ref(0)
 <template>
   <aeria-button @click="count++">
     Count: {{ count }}
-  </aeria-button>
-
-  <aeria-button variant="alt" @click="count = 0">
-    Reset
   </aeria-button>
 </template>
 ```

@@ -10,6 +10,8 @@ This component renders a frame with a picture and some text near it and it's com
 
 ### Example
 
+The code below will render a card.
+
 <result-box>
 <aeria-card style="max-width: 20rem;">
   <aeria-picture alt="Aeria Logo"></aeria-picture>

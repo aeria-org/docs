@@ -12,6 +12,8 @@ provide more info about something where size doesn't fit.
 
 ### Example
 
+Will render a label that, when hovered, will display a info text above it.
+
 <result-box>
 <aeria-info>
   <template #text>
