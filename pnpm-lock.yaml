@@ -46,8 +46,8 @@ importers:
         specifier: ^22.13.1
         version: 22.19.1
       aeria-lang-vscode:
-        specifier: ^0.0.28
-        version: 0.0.28
+        specifier: ^0.1.1
+        version: 0.1.1
       aeria-sdk:
         specifier: ^0.0.176
         version: 0.0.176(@aeriajs/common@0.0.163(@aeriajs/types@0.0.137(@phosphor-icons/core@2.1.1))(bson@7.0.0))(@aeriajs/types@0.0.137(@phosphor-icons/core@2.1.1))
@@ -996,9 +996,9 @@ packages:
       glob: '*'
       vite: '*'
 
-  aeria-lang-vscode@0.0.28:
-    resolution: {integrity: sha512-e0cqvOwes5bwUkxXzEa5kux9y77z5K3gVhtDHUd6RbFuzD3aAzjbvP5Zn9D9zOmFVW5WAF2VXoVq3mNuYL7rFw==}
-    engines: {vscode: '>=1.56.0'}
+  aeria-lang-vscode@0.1.1:
+    resolution: {integrity: sha512-AoWVNHw/EQzjiBYZGXd1zxCAUS1ZfIHloNm4VzQjFVkydNHht4ofW4oTKgVMyJ//2Hz3jpXQCFVkhh7Kv9OaBA==}
+    engines: {vscode: '>=1.100.0'}
 
   aeria-sdk@0.0.176:
     resolution: {integrity: sha512-SDZGMM5vUKQw/A0I/PJIDqWUM6W3XLAj7hUY41T2jWTgjaHeSZyJQ2K6UR60NggFqqaJR/4DnISRa+bj8EAISw==}
@@ -2582,7 +2582,7 @@ snapshots:
       glob: 13.0.0
       vite: 7.2.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.2)(lightningcss@1.30.2)
 
-  aeria-lang-vscode@0.0.28:
+  aeria-lang-vscode@0.1.1:
     dependencies:
       vscode-languageclient: 9.0.1
 
