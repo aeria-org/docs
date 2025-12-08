@@ -33,8 +33,11 @@ const count = ref(0)
 </script>
 
 <template>
-  <aeria-button @click="count++">
-    Count: {{ count }}
+  <aeria-button
+    :disabled="count >= 10"
+    @click="count++"
+  >
+    Increment
   </aeria-button>
 </template>
 ```
