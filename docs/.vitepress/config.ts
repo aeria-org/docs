@@ -83,7 +83,7 @@ export default defineConfig({
       },
       {
         icon: 'discord',
-        link: 'https://discord.aeria.land/'
+        link: 'https://aeria.is-a.dev/discord'
       }
     ],
     footer: {
