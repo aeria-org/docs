@@ -49,6 +49,9 @@ export default defineConfig({
   themeConfig: {
     logo: '/assets/logo.png',
     outline: [1, 4],
+    editLink: {
+      pattern: 'https://github.com/aeria-org/docs/edit/master/docs/:path',
+    },
     nav: [
       {
         component: 'NavbarQuickSwitch',
