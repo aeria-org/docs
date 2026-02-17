@@ -12,5 +12,5 @@ How to verifiy this is the case (run in both API and frontend folders):
 npm explain @aeriajs/types
 ```
 
-If versions differ, then you must update or pin the dependencies to use the same version.
+If versions differ, then you must update or pin the dependencies to use the same version. If using a project bootstrapped with `create-aeria-app`, running `npm run update` on the project root should fix the issue.
 
