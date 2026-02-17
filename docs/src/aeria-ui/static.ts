@@ -24,13 +24,6 @@ export const components = [
   'aeria-tabs',
 ]
 
-export const directives = {
-  'v-clickable': 'directives#v-clickable',
-  'v-focus': 'directives#v-focus',
-  'v-loading': 'directives#v-loading',
-  'v-overlay': 'directives#v-overlay',
-}
-
 export const composables = {
   'useAction()': 'composables#useaction',
   'useBreakpoints()': 'composables#usebreakpoints',
@@ -39,5 +32,12 @@ export const composables = {
   'useNavbar()': 'composables#usenavbar',
   'usePasswordPolicy()': 'composables#usepasswordpolicy',
   'useScrollObserver()': 'composables#usescrollobserver',
+}
+
+export const directives = {
+  'v-clickable': 'directives#v-clickable',
+  'v-focus': 'directives#v-focus',
+  'v-loading': 'directives#v-loading',
+  'v-overlay': 'directives#v-overlay',
 }
 

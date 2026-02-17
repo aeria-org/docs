@@ -57,6 +57,10 @@ export default defineConfig({
         component: 'NavbarQuickSwitch',
       },
       {
+        text: 'Troubleshooting',
+        link: '/troubleshooting',
+      },
+      {
         text: 'Docs',
         activeMatch: '^/(aeria|aeria-ui)//',
         items: [
