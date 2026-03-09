@@ -11,8 +11,8 @@ type Section =
   | 'about'
 
 const router = await useRouter()
-const section = computed(() => {
-  router.currentRoute.value.query.section as Section || 'home'
+const section = computed((): Section => {
+  return router.currentRoute.value.query.section as Section || 'home'
 })
 </script>
 
