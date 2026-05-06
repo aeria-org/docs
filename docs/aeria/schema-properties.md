@@ -191,14 +191,6 @@ Example use case: imagine a `Post` collection which has an array of `Comment` re
 comments []Comment @inline
 ```
 
-### `@purge`
-
-Indicates the referenced document should be removed when the parent document is removed.
-
-```aeria-properties
-comments []Comment @purge
-```
-
 ### `@indexes`
 
 Used to set which foreign properties should be used as indexes. Setting this property and running `aeria -m` will result in collection indexes being created in the database.
